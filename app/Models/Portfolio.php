@@ -14,6 +14,16 @@ class Portfolio extends Model
         'image',
         'media_url',
         'description',
+        'is_active',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'is_active' => 'boolean', // <-- Tambahkan cast
     ];
 
     public function category()

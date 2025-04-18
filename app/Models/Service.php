@@ -14,9 +14,11 @@ class Service extends Model
         'price',
         'price_unit',
         'icon',
+        'is_active',
     ];
 
     protected $casts = [
         'includes' => 'array', // Cast kolom JSON ke array
+        'is_active' => 'boolean', // Otomatis konversi nilai ke boolean
     ];
 }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->json('includes')->nullable(); // Daftar fitur sebagai JSON
             $table->decimal('price', 8, 2);      // Harga dengan 2 desimal
             $table->string('price_unit');         // Satuan harga (misalnya, "/day")
+            $table->boolean('is_active')->default(true)->after('price_unit')->comment('Service status');
             $table->string('icon')->nullable();   // Ikon untuk layanan
             $table->timestamps();
         });

@@ -44,7 +44,7 @@ class PortfolioResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')->sortable(),
+                Tables\Columns\TextColumn::make('title')->limit(50),
                 Tables\Columns\TextColumn::make('category.name')->sortable(),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('media_url')->label('Video URL'),

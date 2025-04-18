@@ -1662,3 +1662,11 @@ p.price span.recurrance {
 }
 /* =End Prices
 --------------------------------------------------------------------------------------------------------*/
+
+.icon-block {
+    display: block; /* Membuat <i> jadi elemen block */
+    text-align: center; /* Menengahkan ikon di dalam 'child' div */
+    margin: 0 auto 15px; /* Margin horizontal auto (center), margin bawah 15px seperti .icons asli */
+    line-height: 1; /* Reset line-height agar tidak mengganggu tinggi ikon */
+    /* HAPUS width dan height dari sini */
+}

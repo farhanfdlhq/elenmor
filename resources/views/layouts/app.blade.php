@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title', 'Killeen – A Contemporary Portfolio for Photographers')</title>
+    <title>@yield('title', 'Travel italia-indonesia')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="weibergmedia">
-    <meta name="Description" content="Killeen – A Contemporary Portfolio for Photographers" />
+    <meta name="author" content="Elenmorcreative">
+    <meta name="Description" content="Elenmor - Portfolio for Photographers" />
 
     <!-- CSS -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+
     <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/flexslider.css') }}" rel="stylesheet">

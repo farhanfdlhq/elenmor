@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('image')->nullable();         // Thumbnail gambar (opsional)
             $table->string('media_url')->nullable();     // URL untuk video (opsional)
             $table->text('description')->nullable();     // Deskripsi (opsional)
+            $table->boolean('is_active')->default(true)->after('description')->comment('Portfolio status');
             $table->timestamps();
         });
     }
