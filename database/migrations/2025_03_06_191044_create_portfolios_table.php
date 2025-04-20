@@ -12,11 +12,11 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->foreignId('category_id')->constrained('portfolio_categories')->onDelete('cascade');
-            $table->string('image')->nullable();         // Thumbnail gambar (opsional)
-            $table->string('media_url')->nullable();     // URL untuk video (opsional)
-            $table->text('description')->nullable();     // Deskripsi (opsional)
-            $table->boolean('is_active')->default(true)->after('description')->comment('Portfolio status');
+            $table->unsignedBigInteger('category_id');
+            $table->string('image')->nullable();
+            $table->string('media_url')->nullable();
+            $table->text('description')->nullable();
+            $table->boolean('is_active')->default(1)->comment('Portfolio status'); 
             $table->timestamps();
         });
     }

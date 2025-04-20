@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('title');              // Nama layanan
-            $table->json('includes')->nullable(); // Daftar fitur sebagai JSON
-            $table->decimal('price', 8, 2);      // Harga dengan 2 desimal
-            $table->string('price_unit');         // Satuan harga (misalnya, "/day")
-            $table->boolean('is_active')->default(true)->after('price_unit')->comment('Service status');
-            $table->string('icon')->nullable();   // Ikon untuk layanan
+            $table->string('title');
+            $table->json('includes')->nullable();
+            $table->decimal('price', 8, 2);
+            $table->string('price_unit');
+            $table->boolean('is_active')->default(1)->comment('Service status'); // Hapus after()
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }
